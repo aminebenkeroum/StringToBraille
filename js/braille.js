@@ -87,6 +87,7 @@ var transformer = function(paragraphe){
 }
 
 var matrix = transformer(input);
+
 // write it to DOM Elements
 var output = "";
 var domIt = function(matrix){
@@ -118,8 +119,7 @@ var domIt = function(matrix){
 
 };
 
-
-
 domIt(matrix);
 
+// Write data to HTML document
 document.write(output);
