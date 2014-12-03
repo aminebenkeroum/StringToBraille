@@ -42,8 +42,6 @@ var numbers = {
 
 // input paragraph to transform
 
-var input = "Justin Bieber";
-
 var lowerCaser = function(char){
     if(char === char.toUpperCase() )
     {
@@ -86,7 +84,7 @@ var transformer = function(paragraphe){
       return textToMatrix;
 }
 
-var matrix = transformer(input);
+
 
 // write it to DOM Elements
 var output = "";
@@ -119,7 +117,17 @@ var domIt = function(matrix){
 
 };
 
-domIt(matrix);
+//domIt(matrix);
 
 // Write data to HTML document
-document.write(output);
+//document.write(output);
+
+
+var button = document.getElementById("convert");
+button.addEventListener("click",function(e){
+    document.getElementById("display").innerHTML = " ";
+    var stringValue = document.getElementById("string").value;
+    var matrix = transformer(stringValue);
+    domIt(matrix);
+    document.getElementById("display").innerHTML = output;
+});

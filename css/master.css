@@ -1,10 +1,9 @@
-
 .char{
   width:100px;
   height:150px;
   float:left;
   margin:20px;
-  border:1px solid red;
+  border:1px solid #eee;
 }
 
 .case{
@@ -14,20 +13,22 @@
 
 }
 
-
 .full{
   height:50px;
   width:50px;
   float:left;
   border-radius:150px;
-  background:black;
+  background:url(../img/full.png) no-repeat center center;
 }
 
-
-
 .blank{
+  background:url(../img/white.png) no-repeat center center;
   width:50px;
   height:50px;
   float:left;
-  background:white;
+}
+
+#display{
+  width:100%;
+  height:auto;
 }
